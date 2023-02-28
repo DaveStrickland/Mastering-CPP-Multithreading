@@ -6,7 +6,7 @@ int main(int argc, char *argv[]) {
   int numprocs, rank, len;
   char procname[MPI_MAX_PROCESSOR_NAME];
   int tnum = 0, tc = 1;
-  int np;
+  int np = 0;
 
   MPI_Init(&argc, &argv);
   MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
